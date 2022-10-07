@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <a href="test.html"><img src="images/c4.png" alt=""></a>
+            <div class="logo">
+            <ul>
+                <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+                <li><a href="#" onclick="showDialog()"><i class="icon ion-md-log-in"></i></a>
+                <div id="overlay" onclick="hideDialog()"></div>
+                <div id="dialog">
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Your Mail">
+                    <input type="text" placeholder="Enter Your Password">
+                    <button onclick="myalert()">Login</button>
+                </form>
+                </div>
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header">
+        <nav>
+            <div class="h">
+                <h2>Vintage Car Rally</h2>
+            </div>
+            <div class="nav-links" id="navlinks">
+                <i class="icon ion-md-close" id="icon" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="test.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="q&a.html">Q&A</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="driver.html">Our Drivers</a></li>
+                </ul>
+            </div>
+            <i class="icon ion-md-menu" id="icon" onclick="showMenu()"></i>
+        </nav>
+    </div>
+
+    <div class="bc">
+        <div class="bc-col">
+            <a href="register.html">
+            <img src="images/c27.jpg" alt="burma"></a>
+            <h2>Sir Lanka Classic Rally</h2>
+        </div>
+    </div>
+
+    <div class="bc1">
+        <div class="row">
+            <div class="bc1-col">
+                <h1>RALLY ITINERARY</h1>
+                <img src="images/c40.jpg" alt="road map">
+            </div>
+
+            <div class="bur">
+                <h3>Sri Lanka, The island of Jewels in the Indian Ocean! </h3><br>
+                <p>
+                    Serendip was the original name of Sri Lanka used by Arabic traders from which came the English ‘serendipity’ because the land was a happy chance discovery!
+                </p>
+                <br>
+                <p>
+                    We picked up the most scenic routes across the country, along paddy fields, mango groves and forest and along the coast. Once you hit the highlands watch out for the spectacular sweep of the mountains and the sprawling tea gardens on mist-clad undulating slopes that stretch out as far as the eye can see.
+                </p>
+                <h3>
+                    Total Days - 15 Days <br>
+                    Rally Dates - 1 December to 16 December <br>
+                    Rally Distance - 1.750km <br>
+                    Start - Waikkal <br>
+                    End - Colombo <br>
+                    Number Of Cars - Limited to 30 cars
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showDialog()
+        {
+            document.getElementById('overlay').style.display="block";
+            document.getElementById('dialog').style.display="block";
+        }
+        function hideDialog(){
+            document.getElementById('overlay').style.display="none";
+            document.getElementById('overlay').style.display="none";
+        }
+        function myalert()
+        {
+            alert("Successfully Completed Login!")
+        }
+    </script>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="footer-col-2">
+                    <h2>Vintage Car Rally</h2>
+                </div>
+                
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copy Right :copy:www.nccmisicfestival.com All Right Reserved</p>
+        </div>
+       </div>
+
+</body>
+</html>

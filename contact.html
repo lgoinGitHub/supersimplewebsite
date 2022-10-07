@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <a href="test.html"><img src="images/c4.png" alt=""></a>
+            <div class="logo">
+            <ul>
+                <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+                <li><a href="#" onclick="showDialog()"><i class="icon ion-md-log-in"></i></a>
+                <div id="overlay" onclick="hideDialog()"></div>
+                <div id="dialog">
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Your Mail">
+                    <input type="text" placeholder="Enter Your Password">
+                    <button onclick="myalert()">Login</button>
+                </form>
+                </div>
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="header">
+        <nav>
+            <div class="h">
+                <h2>Vintage Car Rally</h2>
+            </div>
+            <div class="nav-links" id="navlinks">
+                <i class="icon ion-md-close" id="icon" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="test.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="q&a.html">Q&A</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="driver.html">Our Drivers</a></li>
+                </ul>
+            </div>
+            <i class="icon ion-md-menu" id="icon" onclick="showMenu()"></i>
+        </nav>
+    </div>
+    <div class="life">
+    <section class="contact">
+        <div class="con">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house-user"></i>
+                    <span>
+                        XYZ Road,ABC Building<br>
+                        Thipaw,Shan State
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <a href="tel:+959773356616">09773356616</a><br>
+                        Monday to Saturday, 10AM to 6PM
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <a href="mailto:info@your-site.com">info@gmail.com</a><br>
+                        Email us your need
+                    </span>
+                </div>
+                
+            </div>
+            <div class="contact-col">
+                <form action="#">
+                    <input type="text" placeholder="Enter your Firstname" required>
+                    <input type="text" placeholder="Enter your Lastname" required>
+                    <input type="email" placeholder="Enter your email" required>
+                    <select name="Country">
+                        <option>Burma Rally Road</option>
+                        <option>East Himalaya Rally</option>
+                        <option>Sri Lanka Classic</option>
+                        <option>The Dakar Enduro Rally</option>
+                        <option>The Picos 1000 Rally</option>
+                    </select>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" onclick="myalert1()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56032.92910430684!2d96.16164312848416!3d16.825309858900773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1949e223e196b%3A0x56fbd271f8080bb4!2sYangon!5e0!3m2!1sen!2smm!4v1660999164483!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="footer-col-2">
+                    <h2>Vintage Car Rally</h2>
+                </div>
+                
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copy Right :copy:www.nccmisicfestival.com All Right Reserved</p>
+        </div>
+       </div>
+
+    <script>
+        function showDialog()
+        {
+            document.getElementById('overlay').style.display="block";
+            document.getElementById('dialog').style.display="block";
+        }
+        function hideDialog(){
+            document.getElementById('overlay').style.display="none";
+            document.getElementById('overlay').style.display="none";
+        }
+        function myalert1()
+        {
+            alert("Successfully Completed Login!")
+        }
+        function myalert1()
+        {
+            alert("Successfully Send Message!")
+        }
+    </script>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

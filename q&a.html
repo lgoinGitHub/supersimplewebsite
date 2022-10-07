@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q & A</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <a href="test.html"><img src="images/c4.png" alt=""></a>
+            <div class="logo">
+            <ul>
+                <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+                <li><a href="#" onclick="showDialog()"><i class="icon ion-md-log-in"></i></a>
+                <div id="overlay" onclick="hideDialog()"></div>
+                <div id="dialog">
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Your Mail">
+                    <input type="text" placeholder="Enter Your Password">
+                    <button onclick="myalert()">Login</button>
+                </form>
+                </div>
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header">
+        <nav>
+            <div class="h">
+                <h2>Vintage Car Rally</h2>
+            </div>
+            <div class="nav-links" id="navlinks">
+                <i class="icon ion-md-close" id="icon" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="test.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="q&a.html">Q&A</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="driver.html">Our Drivers</a></li>
+                </ul>
+            </div>
+            <i class="icon ion-md-menu" id="icon" onclick="showMenu()"></i>
+        </nav>
+    </div>
+    <div class="ques">
+        <div class="b">
+            <div class="box">
+                <input type="text" placeholder="Search Question...">
+                    <a href="#">
+                        <i class="icon ion-md-search" id="md" onclick="myalert4()"></i>
+                    </a>
+            </div>
+        </div>
+    <div class="ans">
+        <h1>Frequently ask question</h1>
+    </div>
+    <div class="eq">
+        <div class="container">
+            <div class="accordion">
+                <div class="item" id="question1">
+                    <a class="acc-link" href="#question1">
+                        What are rally cars?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            Rally cars are purposely built racing cars which are derived from regular cars to drive a rally, which is is done on sections of closed public roads.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item" id="question2">
+                    <a class="acc-link" href="#question2">
+                        How are rally cars built?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            Rally car is at first glance the same as a regular car, but actually, the only common thing is the bodyshell, which is the base for constructing a rally 
+                            car. To make a rally car, you need to buy a regular car, take everything apart until you are left with a bare chassis, chop off everything that is not 
+                            required to make it lighter, weld all the current welds and add new ones to the spots, where chassis could brake while landing a jump. Then install 
+                            a rollcage, engine, brakes, electronics and interior parts like racing seats and seatbelts, extinguisher, switches, intercom and other components. 
+                            Every modification made and every part installed needs to comply with regulations in order to achieve homologation and be able to compete on rallies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item" id="question3">
+                    <a class="acc-link" href="#question3">
+                        What tires do rally cars use?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            Rally cars use special racing tires, which are different based on condition and driving surface (tarmac, gravel, snow). Take a look at our previous post about 
+                            WRC Rally tyres to learn more in details about each tyre available on certain rallies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item" id="question4">
+                    <a class="acc-link" href="#question4">
+                        What engine do rally cars use?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>
+                            Rally cars are sorted into classes / groups, based on their engine capacity, ranging from 1067cc (R3D) to 2000cc (RGT, Group N). The WRC cars are restricted to using 1600cc engines. 
+                            Cars may be naturally aspirated or turbocharged, ran by petrol fuel, with exception of class R3D, which is for diesel supercharged engines. You can find more about engines here.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="qa">
+        <form action="#">
+            <input type="text" placeholder="Enter your Firstname" required><br>
+            <input type="text" placeholder="Enter your Secondname" required><br>
+            <input type="email" placeholder="Enter your email" required><br>
+            
+            <textarea rows="5" placeholder="Question" required></textarea><br>
+            <button type="submit" class="btn" onclick="myalert2()">Send Question</button>
+        </form>
+    </div>
+</div>
+    <script>
+        function showDialog()
+        {
+            document.getElementById('overlay').style.display="block";
+            document.getElementById('dialog').style.display="block";
+        }
+        function hideDialog(){
+            document.getElementById('overlay').style.display="none";
+            document.getElementById('overlay').style.display="none";
+        }
+        function myalert()
+        {
+            alert("Successfully Completed Login!")
+        }
+        function myalert2()
+        {
+            alert("Successfully Completed Send Question!")
+        }
+        function myalert4()
+        {
+            alert("Successfully Search Question!")
+        }
+    </script>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="footer-col-2">
+                    <h2>Vintage Car Rally</h2>
+                </div>
+                
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copy Right :copy:www.nccmisicfestival.com All Right Reserved</p>
+        </div>
+       </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <a href="test.html"><img src="images/c4.png" alt=""></a>
+            <div class="logo">
+            <ul>
+                <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+                <li><a href="#" onclick="showDialog()"><i class="icon ion-md-log-in"></i></a>
+                <div id="overlay" onclick="hideDialog()"></div>
+                <div id="dialog">
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Your Mail">
+                    <input type="text" placeholder="Enter Your Password">
+                    <button onclick="myalert()">Login</button>
+                </form>
+                </div>
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header">
+        <nav>
+            <div class="h">
+                <h2>Vintage Car Rally</h2>
+            </div>
+            <div class="nav-links" id="navlinks">
+                <i class="icon ion-md-close" id="icon" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="test.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="q&a.html">Q&A</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="driver.html">Our Drivers</a></li>
+                </ul>
+            </div>
+            <i class="icon ion-md-menu" id="icon" onclick="showMenu()"></i>
+        </nav>
+    </div>
+    <div class="bb">
+    <div class="rally">
+        <h2>View Rally Info and Register</h2>
+        <div class="row">
+            <div class="ral-col">
+                <a href="burma.html"><img src="images/c25.jpg" alt="logo"></a>
+                <h3>Burma Rally Road</h3>
+                <a href="burma.html" class="a1">View Info</a>
+            </div>
+            <div class="ral-col">
+                <a href="east.html"><img src="images/c26.jpg" alt="logo"></a>
+                <h3>East Himalaya Rally</h3>
+                <a href="east.html" class="a1">View Infox</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="rally">
+        <div class="row">
+            <div class="ral-col">
+                <a href="sir.html"><img src="images/c27.jpg" alt="logo"></a>
+                <h3>Sri Lanka Classic</h3>
+                <a href="sir.html" class="a1">View Info</a>
+            </div>
+            <div class="ral-col">
+                <a href="dakar.html"><img src="images/c32.jpg" alt="logo"></a>
+                <h3>The Dakar Enduro Rally</h3>
+                <a href="dakar.html" class="a1">View Info</a>
+            </div>
+        </div>
+    </div>
+    
+        <div class="ral-col3">
+            <a href="picos.html"><img src="images/c31.jpg" alt="logo"></a>
+        </div>
+        <div class="col">
+            <h3>The Picos 1000 Rally</h3>
+            <a href="picos.html">View Info</a>
+        </div>
+    
+    <div class="contact-col1">
+        <form action="#">
+            <input type="text" placeholder="Enter your FirstName" required>
+            <input type="text" placeholder="Enter your LastName" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="email" placeholder="Enter your Phone Number" required>
+            <select name="Country">
+                <option>Burma Rally Road</option>
+                <option>East Himalaya Rally</option>
+                <option>Sri Lanka Classic</option>
+                <option>The Dakar Enduro Rally</option>
+                <option>The Picos 1000 Rally</option>
+            </select>
+            
+            <button type="submit" onclick="myalert3()">Register Event</button>
+        </form>
+    </div>
+</div>
+    <script>
+        function showDialog()
+        {
+            document.getElementById('overlay').style.display="block";
+            document.getElementById('dialog').style.display="block";
+        }
+        function hideDialog(){
+            document.getElementById('overlay').style.display="none";
+            document.getElementById('overlay').style.display="none";
+        }
+        function myalert()
+        {
+            alert("Successfully Completed Login!")
+        }
+        function myalert3()
+        {
+            alert("Successfully Completed register event!")
+        }
+    </script>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="footer-col-2">
+                    <h2>Vintage Car Rally</h2>
+                </div>
+                
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copy Right :copy:www.nccmisicfestival.com All Right Reserved</p>
+        </div>
+       </div>
+</body>
+</html>

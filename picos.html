@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <a href="test.html"><img src="images/c4.png" alt=""></a>
+            <div class="logo">
+            <ul>
+                <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+                <li><a href="#" onclick="showDialog()"><i class="icon ion-md-log-in"></i></a>
+                <div id="overlay" onclick="hideDialog()"></div>
+                <div id="dialog">
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Your Mail">
+                    <input type="text" placeholder="Enter Your Password">
+                    <button onclick="myalert()">Login</button>
+                </form>
+                </div>
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header">
+        <nav>
+            <div class="h">
+                <h2>Vintage Car Rally</h2>
+            </div>
+            <div class="nav-links" id="navlinks">
+                <i class="icon ion-md-close" id="icon" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="test.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="q&a.html">Q&A</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="driver.html">Our Drivers</a></li>
+                </ul>
+            </div>
+            <i class="icon ion-md-menu" id="icon" onclick="showMenu()"></i>
+        </nav>
+    </div>
+    <div class="bc2">
+        <div class="bc-col">
+            <a href="register.html"><img src="images/c31.jpg" alt="burma"></a>
+        </div>
+    </div>
+
+    <div class="picos">
+        <div class="pic">
+            <h1>THE PICOS 1000<br>
+                2022 RALLY<br>
+                DEC 6TH TO 10TH, 2022
+            </h1>
+            <h3>Santillana del Mar - Fuente de - Arrondas - Abba</h3>
+            <img src="images/c33.jpg" alt="">
+            <p>
+                Four nights and 1000 kms of exquisite driving in the Picos mountains of northern Spain. Fabulous scenery, roads and accommodation with Spanish flair. This is a regularity rally in four legs using Bespoke Rallies’ own Virtual Marshal
+                timing system.
+            </p>
+            <br>
+            <p>
+                The widely accepted origin for the Picos name is that they were the first sight of Europe for ships arriving from the Americas. Before the sailors saw the mainland they could see the sharp limestone peaks. Renowned in Spain as one of the 
+                most beautiful areas they are less known outside the country. We will right the wrong and show you some of the most fantastic scenery so close to home.
+            </p>
+            <br>
+            <p>
+                The Picos 1000 is one of the events that qualifies for our 1000 Trophy. The others are The Pyrenees 1000 and the Pennine 1000. To qualify for the trophy you must do at least two of the events.
+            </p>
+            <h3>
+                Total Days - 4 Days <br>
+                Rally Dates - 6 December to 10 December <br>
+                Rally Distance - 3.100km <br>
+                Start - Santillana del Mar <br>
+                End - Santillana del Mar <br>
+                Number Of Cars - Limited to 30 cars
+            </h3>
+        </div>
+    </div>
+
+    <script>
+        function showDialog()
+        {
+            document.getElementById('overlay').style.display="block";
+            document.getElementById('dialog').style.display="block";
+        }
+        function hideDialog(){
+            document.getElementById('overlay').style.display="none";
+            document.getElementById('overlay').style.display="none";
+        }
+        function myalert()
+        {
+            alert("Successfully Completed Login!")
+        }
+    </script>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="footer-col-2">
+                    <h2>Vintage Car Rally</h2>
+                </div>
+                
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copy Right :copy:www.nccmisicfestival.com All Right Reserved</p>
+        </div>
+       </div>
+</body>
+</html>

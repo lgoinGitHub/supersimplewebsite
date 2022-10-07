@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <a href="test.html"><img src="images/c4.png" alt=""></a>
+            <div class="logo">
+            <ul>
+                <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                <li><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+                <li><a href="#" onclick="showDialog()"><i class="icon ion-md-log-in"></i></a>
+                <div id="overlay" onclick="hideDialog()"></div>
+                <div id="dialog">
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="text" placeholder="Enter Your Email">
+                    <input type="text" placeholder="Enter Your Password">
+                    <button onclick="myalert()">Login</button>
+                </form>
+                </div>
+            </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header">
+        <nav>
+            <div class="h">
+                <h2>Vintage Car Rally</h2>
+            </div>
+            <div class="nav-links" id="navlinks">
+                <i class="icon ion-md-close" id="icon" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="test.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="q&a.html">Q&A</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="driver.html">Our Drivers</a></li>
+                </ul>
+            </div>
+            <i class="icon ion-md-menu" id="icon" onclick="showMenu()"></i>
+        </nav>
+    </div>
+    <section class="welcome">
+        <div class="wel">
+            <img src="images/c10.png" alt="car">
+            <h2>Vintage Car Rally</h2>
+            <p>
+                Classic rallying, or historic rallying, is a type of road rally suitable for most standard classic cars, 
+                with no special equipment needed (the equipment allowed depends on the particular rally). These rallies 
+                are more about enjoyment than speed, and can be a good introduction to historic motorsport (which also include race meetings,
+                classic endurance, and hillclimbing). In a vintage car rally, participants compete on their skills, not on speed. A classic car 
+                rally is a race where participants follow the traffic rules and can enjoy driving with their beloved car, and at the same time it 
+                entertains the eyes of roadside spectators. The idea of a rally is to travel from a point to another within a certain time , not too 
+                fast or too slow, trying to match a speed average set by the organizers.
+            </p>
+            <audio controls autoplay muted> 
+                <source src="music.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </section>
+    <div class="car">
+        <img src="images/c18.jpg" alt="car">
+        <img src="images/c21.jpg" alt="car">
+    </div>
+    <div class="cc">
+        <h1>BMW 1972</h1>
+        <div class="row">
+        <div class="car-col">
+            <img src="images/c0.jpg" alt="car">
+        </div>
+        <div class="car">
+            <p>
+                Introduced in May 1972, the BMW 1972 was a homologation special built to make the car eligible for racing in the 
+                European Touring Car Championship. The BMW 1972 is the first generation of 5 Series executive cars, which was produced 
+                from 1972 to 1981 and replaced the saloon models of the BMW New Class range.
+            </p>
+            <audio controls autoplay muted> 
+                <source src="music1.mp3" type="audio/mp3">
+            </audio>
+            <h4>
+                Brand: BMW<br>
+                Model: CSL<br>
+                First release year: 1972
+            </h4>
+        </div>
+        </div>
+        
+    </div>
+    <div class="cr">
+        <h1>CHEVROLET</h1>
+        <div class="row">
+            <div class="car-col">
+                <img src="images/c8.jpg" alt="car">
+            </div>
+            <div class="car">
+                <p>
+                    The Chevrolet El Camino is a coupé utility vehicle that was produced by Chevrolet between 1959–60 and 1964–1987. Unlike a standard pickup truck, the El Camino was adapted from the standard two-door Chevrolet station wagon platform and integrated the cab and cargo bed into the body.
+                    The Chevrolet El Camino coupe utility vehicle was classified as an SUV at the time. It was based on the chassis of a sedan but offered a sizeable bed behind the seats. The third generation El Camino was the second to last to be based on the Chevelle platform.
+                </p>
+                <audio controls autoplay muted> 
+                    <source src="music2.mp3" type="audio/mp3">
+                </audio>
+                <h4>
+                    Brand: Chevrolet<br>
+                    Model:  El Camino SS<br>
+                    First release year: 1970
+                </h4>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showDialog()
+        {
+            document.getElementById('overlay').style.display="block";
+            document.getElementById('dialog').style.display="block";
+        }
+        function hideDialog(){
+            document.getElementById('overlay').style.display="none";
+            document.getElementById('overlay').style.display="none";
+        }
+        function myalert()
+        {
+            alert("Successfully Completed Login!")
+        }
+    </script>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                
+                <div class="footer-col-2">
+                    <h2>Vintage Car Rally</h2>
+                </div>
+                
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copy Right :copy:www.nccmisicfestival.com All Right Reserved</p>
+        </div>
+    </div>
+
+</body>
+</html>
